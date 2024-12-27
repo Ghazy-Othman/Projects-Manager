@@ -1,0 +1,15 @@
+
+
+email : ghazy.h.othman@gmail.com
+password:
+section : software
+
+
+email : ghazyosman5@gmail.com
+password :
+section : software
+
+
+email : mazootbanzeen@gmail.com
+password :
+section : network

@@ -1,0 +1,111 @@
+name: 'Add Requests'
+description: |-
+
+  APIs for managing groups add requests .
+endpoints:
+  -
+    httpMethods:
+      - POST
+    uri: api/students/add-request
+    metadata:
+      groupName: 'Add Requests'
+      groupDescription: |-
+
+        APIs for managing groups add requests .
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'New add request'
+      description: 'This endpoint allows students to send add requet to other students to join a group .'
+      authenticated: true
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      group_id:
+        name: group_id
+        description: 'The id of group .'
+        required: true
+        example: 7
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      reciver_student_id:
+        name: reciver_student_id
+        description: 'The id of the student who will recive the request .'
+        required: true
+        example: 7
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanBodyParameters:
+      group_id: 7
+      reciver_student_id: 7
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/students/update-add-request
+    metadata:
+      groupName: 'Add Requests'
+      groupDescription: |-
+
+        APIs for managing groups add requests .
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Update add request'
+      description: 'This endpoint allows students to accept or reject add requet from other students to join a group .'
+      authenticated: true
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      add_request_id:
+        name: add_request_id
+        description: 'The id request .'
+        required: true
+        example: 19
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      new_status:
+        name: new_status
+        description: 'New status value .'
+        required: true
+        example: 1
+        type: integer
+        enumValues:
+          - 0
+          - 1
+        exampleWasSpecified: false
+        custom: []
+    cleanBodyParameters:
+      add_request_id: 19
+      new_status: 1
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
